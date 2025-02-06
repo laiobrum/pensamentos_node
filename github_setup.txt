@@ -1,0 +1,4 @@
+1. Criar o repositório no meu perfil do GitHub
+2. Ir para a pasta que quero usar
+3. Apagar qualquer arquivo git que possa haver: ---git rm----
+4. Iniciar o repositório git no meu ambiente local: ----git init---
