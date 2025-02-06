@@ -1,0 +1,91 @@
+*{
+    background-color: black;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid rgba(255, 166, 0, 0.475) 2px;
+    padding: 20px 50px;
+}
+.navImg {
+    width: 35px;
+}
+.navRoutes {
+    display: flex;
+    color: white;
+    font-weight: bold;
+}
+.navRoutes > a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 2em;
+}
+.homeContent {
+    min-height: 100vh;
+}
+.footer{
+    padding: 20px 50px;
+    border-top: solid rgba(255, 166, 0, 0.475) 2px;
+    text-align: center;
+    align-items: end;
+}
+.footer > p > span {
+    color: orange;
+}
+/* Home Page */
+.homePage{
+    margin-top: 3rem;
+    text-align: center;
+}
+.homePage > h1 {
+    margin-bottom: 45px;
+}
+.homePage > h1 > span {
+    color: orange;
+}
+.searchBar > input {
+    border: none;
+    border-bottom: solid white;
+    width: 500px;
+}
+.searchBar > button {
+    border: solid 2px orange;
+    color: orange;
+    border-radius: 6px;
+    width: 90px;
+    height: 35px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.orderBar {
+    font-size: smaller;
+    margin: 20px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.orderBar > p > span {
+    color: orange;
+}
+.homeThoughts{
+    display: flex;
+    justify-content: center;
+}
+.homeThoughts > div {
+    border-bottom: solid rgb(81, 81, 81) 1px;
+    width: 600px;
+    justify-content: flex-start;
+    text-align: start;
+}
+.tought {
+    font-size: xx-large;
+    font-style: italic;
+}
+.homeThoughts > div > p {
+    margin: 20px 0 5px 10px;
+}
