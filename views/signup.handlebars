@@ -1,0 +1,26 @@
+<div class="signLogPage">
+    <div>
+        <div class="errorMessage {{show}}">{{errorMessage}}</div>
+        <form action="/signup/create" method="POST">
+            <h1>&nbsp;Registrar</h1>
+            <div class="dataInputs">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" placeholder="Digite seu nome" value="{{user.name}}">
+            </div>
+            <div class="dataInputs">
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" placeholder="Digite seu e-mail" value="{{user.email}}">
+            </div>
+            <div class="dataInputs">
+                <label for="password">Senha:</label>
+                <input type="password" name="password" placeholder="Digite sua senha">
+            </div>
+            <div class="dataInputs">
+                <label for="password">Confirmação de senha:</label>
+                <input type="password" name="confirmPassword" placeholder="Confirme sua senha">
+            </div>
+            <button class="standardBtn" type="submit">Cadastrar</button>
+        </form>
+        <p>Já tem conta? <a href="/signin">Clique aqui</a></p>
+    </div>
+</div>

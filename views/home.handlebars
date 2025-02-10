@@ -2,8 +2,8 @@
     <h1>Conheça alguns dos nossos <span>Pensamentos</span>:</h1>
     <form class="homeForm" action="" method="">
         <div class="searchBar">
-            <input type="text" name="toughtsQuery" placeholder="Está buscando algo?">
-            <button type="submit">Buscar</button>
+            <input type="text" name="thoughtsQuery" placeholder="Está buscando algo?">
+            <button class="standardBtn" type="submit">Buscar</button>
         </div>
 
         <div class="orderBar">
@@ -15,11 +15,11 @@
     </form>
 
     <div class="homeThoughts">
-        {{!-- {{#each}} --}}
+        {{#each allThoughts}}
         <div>
-            <p class="tought">"Ipsum Lorem"</p>
-            <p>por <span>ipsum@lorem.com</span></p>
+            <p class="thought">{{this.thought}}</p>
+            <p>por <span>{{this.email}}</span></p> 
         </div>
-        {{!-- {{/each}} --}}
+        {{/each}}
     </div>
 </div>

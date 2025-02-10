@@ -2,14 +2,14 @@ import { DataTypes } from "sequelize";
 import db from '../db/conn.js'
 import User from './User.js'
 
-const Tought = db.define('Tought', {
-    tought: {
+const Thought = db.define('Thought', {
+    thought: {
         type: DataTypes.STRING,
         required: true
     }
 })
 
-User.hasMany(Tought)
-Tought.belongsTo(User)
+User.hasMany(Thought)
+Thought.belongsTo(User)
 
-export default Tought
+export default Thought

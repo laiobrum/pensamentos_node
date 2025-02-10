@@ -1,0 +1,17 @@
+<div class="dashboard">
+    <div>
+        <h2>Dashboard</h2>
+        <h3>Seus pensamentos</h3>
+        <ul>
+            {{#each thoughts}}
+            <li class="theThought">{{this.thought}}</li>
+            {{/each}}
+            <div class="errorMessageDashboard {{show}}"><li class="theThought">{{thoughts}}</li></div>
+        </ul>
+    </div>
+    
+
+    <div>
+        <a href="/create"><button class="standardBtn">Criar Pensamento</button></a>
+    </div>
+</div>
